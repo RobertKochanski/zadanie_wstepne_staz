@@ -1,0 +1,15 @@
+D:\staże\zadanie_wstepne\stazAPI\stazServices\bin\Debug\net6.0\stazServices.deps.json
+D:\staże\zadanie_wstepne\stazAPI\stazServices\bin\Debug\net6.0\stazServices.dll
+D:\staże\zadanie_wstepne\stazAPI\stazServices\bin\Debug\net6.0\ref\stazServices.dll
+D:\staże\zadanie_wstepne\stazAPI\stazServices\bin\Debug\net6.0\stazServices.pdb
+D:\staże\zadanie_wstepne\stazAPI\stazServices\obj\Debug\net6.0\stazServices.csproj.AssemblyReference.cache
+D:\staże\zadanie_wstepne\stazAPI\stazServices\obj\Debug\net6.0\stazServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\staże\zadanie_wstepne\stazAPI\stazServices\obj\Debug\net6.0\stazServices.AssemblyInfoInputs.cache
+D:\staże\zadanie_wstepne\stazAPI\stazServices\obj\Debug\net6.0\stazServices.AssemblyInfo.cs
+D:\staże\zadanie_wstepne\stazAPI\stazServices\obj\Debug\net6.0\stazServices.csproj.CoreCompileInputs.cache
+D:\staże\zadanie_wstepne\stazAPI\stazServices\obj\Debug\net6.0\stazServices.dll
+D:\staże\zadanie_wstepne\stazAPI\stazServices\obj\Debug\net6.0\ref\stazServices.dll
+D:\staże\zadanie_wstepne\stazAPI\stazServices\obj\Debug\net6.0\stazServices.pdb
+D:\staże\zadanie_wstepne\stazAPI\stazServices\bin\Debug\net6.0\stazDAL.dll
+D:\staże\zadanie_wstepne\stazAPI\stazServices\bin\Debug\net6.0\stazDAL.pdb
+D:\staże\zadanie_wstepne\stazAPI\stazServices\obj\Debug\net6.0\stazServices.csproj.CopyComplete

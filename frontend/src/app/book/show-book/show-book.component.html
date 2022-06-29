@@ -1,0 +1,26 @@
+<table class="table table-hover table-responsive">
+    <thead>
+        <tr>
+            <th>Guid</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Release_Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of BookList">
+            <td>{{dataItem.id}}</td>
+            <td>{{dataItem.title}}</td>
+            <td>{{dataItem.description}}</td>
+            <td>{{dataItem.release_Date}}</td>
+            <td>
+                <button type="button" class="btn btn-outline-warning m-1">
+                    Edit
+                </button>
+                <button type="button" class="btn btn-outline-danger m-1">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\bin\Debug\net6.0\stazDAL.deps.json
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\bin\Debug\net6.0\stazDAL.runtimeconfig.json
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\bin\Debug\net6.0\stazDAL.dll
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\bin\Debug\net6.0\ref\stazDAL.dll
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\bin\Debug\net6.0\stazDAL.pdb
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\obj\Debug\net6.0\stazDAL.csproj.AssemblyReference.cache
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\obj\Debug\net6.0\stazDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\obj\Debug\net6.0\stazDAL.AssemblyInfoInputs.cache
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\obj\Debug\net6.0\stazDAL.AssemblyInfo.cs
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\obj\Debug\net6.0\stazDAL.csproj.CoreCompileInputs.cache
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\obj\Debug\net6.0\stazDAL.dll
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\obj\Debug\net6.0\ref\stazDAL.dll
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\obj\Debug\net6.0\stazDAL.pdb
+D:\staże\zadanie_wstepne\stazAPI\stazDAL\obj\Debug\net6.0\stazDAL.genruntimeconfig.cache

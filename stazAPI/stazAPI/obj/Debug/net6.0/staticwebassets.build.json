@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4G76DuMCRrMvVbRt4fCAyN8c7WkevKpaJJ0opJBBVsQ=",
+  "Source": "stazAPI",
+  "BasePath": "_content/stazAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
