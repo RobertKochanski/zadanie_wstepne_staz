@@ -20,12 +20,12 @@ readonly APIUrl_Book = 'https://localhost:7028/api/Book';
     return this.http.post(this.APIUrl_Author+'/AddAuthor', val);
   }
 
-  updateAuthor(val:any){
-    return this.http.put(this.APIUrl_Author+'/UpdateAuthor', val);
+  updateAuthor(id:number|string, val:any){
+    return this.http.put(this.APIUrl_Author+`/UpdateAuthor?id=${id}`, val);
   }
 
-  deleteAuthor(val:any){
-    return this.http.delete(this.APIUrl_Author+'/DeleteAuthor' + val);
+  deleteAuthor(id:number|string){
+    return this.http.delete(this.APIUrl_Author+`/DeleteAuthor?id=${id}`);
   }
 
   getBookList():Observable<any[]>{
@@ -36,11 +36,11 @@ readonly APIUrl_Book = 'https://localhost:7028/api/Book';
     return this.http.post(this.APIUrl_Book+'/AddBook', val);
   }
 
-  updateBook(val:any){
-    return this.http.put(this.APIUrl_Book+'/UpdateBook', val);
+  updatBook(id:number|string, val:any){
+    return this.http.put(this.APIUrl_Book+`/UpdateBook?id=${id}`, val);
   }
 
-  deleteBook(val:any){
-    return this.http.delete(this.APIUrl_Book+'/DeleteBook' + val);
+  deleteBook(id:number|string){
+    return this.http.delete(this.APIUrl_Book+`/DeleteBook?id=${id}`);
   }
 }

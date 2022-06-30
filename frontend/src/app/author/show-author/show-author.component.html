@@ -1,3 +1,9 @@
+<!-- Add author trigger modal -->
+<button type="button" class="btn btn-primary float-end m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+(click)="modalAdd()">
+    Add author
+    </button>
+
 <table class="table table-striped">
     <thead>
         <tr>
@@ -13,13 +19,46 @@
             <td>{{dataItem.firstName}}</td>
             <td>{{dataItem.surName}}</td>
             <td>
-                <button type="button" class="btn btn-outline-warning m-1">
+                <button type="button" class="btn btn-outline-warning m-1"
+                (click)="modalEdit(dataItem)" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                >
                     Edit
                 </button>
-                <button type="button" class="btn btn-outline-danger m-1">
+                <button type="button" class="btn btn-outline-danger m-1"
+                (click)="delete(dataItem)"
+                >
                     Delete
                 </button>
             </td>
         </tr>
     </tbody>
 </table>
+
+<div class="alert alert-success" role="alert" id="add-success-alert">
+    Author added successfully!
+</div>
+
+<div class="alert alert-success" role="alert" id="update-success-alert">
+    Author updated successfully!
+</div>
+
+<div class="alert alert-success" role="alert" id="delete-success-alert">
+    Author deleted successfully!
+</div>
+
+<!-- Add or edit author modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">{{ModalTitle}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                (click)="modalClose()" id="add-edit-modal-close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <app-add-edit-author [author]="author" *ngIf="ActivateAddEditAuthorComp"></app-add-edit-author>
+            </div>
+        </div>
+    </div>
+</div>

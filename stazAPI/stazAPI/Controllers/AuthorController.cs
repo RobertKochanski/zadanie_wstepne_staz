@@ -36,7 +36,7 @@ namespace stazAPI.Controllers
         }
 
         [HttpPut("UpdateAuthor")]
-        public async Task<IActionResult> UpdateAuthor(Guid id, UpdateAuthorRequest request)
+        public async Task<IActionResult> UpdateAuthor([FromQuery]Guid id, UpdateAuthorRequest request)
         {
             await _authorService.UpdateAuthor(id, request);
             return Ok();

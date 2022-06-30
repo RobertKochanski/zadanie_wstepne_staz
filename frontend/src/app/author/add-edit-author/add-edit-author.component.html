@@ -1,1 +1,16 @@
-<p>add-edit-author works!</p>
+<form>
+    <div class="mb-3">
+        <label for="firstName" class="form-label">Firstname</label>
+        <input type="text" class="form-control" [(ngModel)]="firstName" name="firstName">
+    </div>
+    <div class="mb-3">
+        <label for="surName" class="form-label">Surname</label>
+        <input type="text" class="form-control" [(ngModel)]="surName" name="surName">
+    </div>
+    <button (click)="addAuthor()" *ngIf="author.id==0" class="btn btn-primary">
+        Add
+    </button>
+    <button (click)="updateAuthor()" *ngIf="author.id!=0" class="btn btn-primary">
+        Update
+    </button>
+</form>

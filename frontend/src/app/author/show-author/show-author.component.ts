@@ -20,6 +20,50 @@ export class ShowAuthorComponent implements OnInit {
     this.refreshAuthorList();
   }
 
+  modalAdd(){
+    this.author = {
+      id: 0,
+      firstName: null,
+      surName: null,
+    }
+
+    this.ModalTitle = "Add Author";
+    this.ActivateAddEditAuthorComp = true;
+  }
+
+  modalEdit(item:any){
+    this.author = item;
+    this.ModalTitle = "Edit Author";
+    this.ActivateAddEditAuthorComp = true;
+  }
+
+  delete(item:any){
+    if(confirm("Are you sure?")){
+      this.service.deleteAuthor(item.id).subscribe(res => {
+        var closeModalBtn = document.getElementById("add-edit-modal-close");
+      if(closeModalBtn){
+        closeModalBtn.click();
+      }
+
+      var showDeleteSuccess = document.getElementById("delete-success-alert");
+      if(showDeleteSuccess){
+        showDeleteSuccess.style.display = "block";
+      }
+      setTimeout(function(){
+        if(showDeleteSuccess){
+          showDeleteSuccess.style.display = "none";
+        }
+      }, 4000);
+      this.refreshAuthorList();
+      });
+    }
+  }
+
+  modalClose(){
+    this.ActivateAddEditAuthorComp = false;
+    this.refreshAuthorList();
+  }
+
   refreshAuthorList(){
     this.service.getAuthorList().subscribe(data=>{
       this.AuthorList=data;

@@ -22,7 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AddEditBookComponent,
     AuthorComponent,
     ShowAuthorComponent,
-    AddEditAuthorComponent
+    AddEditAuthorComponent,
   ],
   imports: [
     BrowserModule,

@@ -69,7 +69,7 @@ namespace stazServices.Services
 
             if (authorFromDb == null)
             {
-                throw new BadRequestException("Podany autor nie istnieje");
+                throw new NotFoundException();
             }
 
             if (string.IsNullOrEmpty(request.FirstName) || string.IsNullOrEmpty(request.SurName))
