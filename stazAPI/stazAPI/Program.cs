@@ -13,8 +13,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 builder.Services.AddDbContext<StazDbContext>
     (o => o.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
+builder.Services.AddTransient<StazDbContext>();
 
 builder.Services.AddScoped<IBookRepositorie, BookRepositorie>();
 builder.Services.AddScoped<IBookService, BookService>();
@@ -49,6 +51,7 @@ builder.Services.AddCors(options =>
 
 
 var app = builder.Build();
+
 
 app.UseCors("Frontend");
 

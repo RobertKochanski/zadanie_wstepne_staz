@@ -35,7 +35,7 @@ namespace stazAPI.Controllers
         }
 
         [HttpPut("UpdateBook")]
-        public async Task<IActionResult> UpdateBook(Guid id, UpdateBookRequest request)
+        public async Task<IActionResult> UpdateBook([FromQuery]Guid id, UpdateBookRequest request)
         {
             await _bookService.UpdateBook(id, request);
             return Ok();

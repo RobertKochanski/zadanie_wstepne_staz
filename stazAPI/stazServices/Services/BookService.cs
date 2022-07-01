@@ -46,11 +46,6 @@ namespace stazServices.Services
                 throw new BadRequestException("Nie podano wszystkich danych");
             }
 
-            if (request.Release_Date > DateTime.Now)
-            {
-                throw new BadRequestException("Podano złą datę");
-            }
-
             if (_authorRepositorie.GetByIdAsync(request.AuthorId) == null) 
             {
                 throw new BadRequestException("Podany autor nie istnieje");
@@ -89,11 +84,6 @@ namespace stazServices.Services
             if (string.IsNullOrEmpty(request.Title) || string.IsNullOrEmpty(request.Title))
             {
                 throw new BadRequestException("Nie podano wszystkich danych");
-            }
-
-            if (request.Release_Date > DateTime.Now)
-            {
-                throw new BadRequestException("Podano złą datę");
             }
 
             if (_authorRepositorie.GetByIdAsync(request.AuthorId) == null)

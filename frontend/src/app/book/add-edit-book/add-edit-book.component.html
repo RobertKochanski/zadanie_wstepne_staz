@@ -1,1 +1,31 @@
-<p>add-edit-book works!</p>
+<form>
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" [(ngModel)]="title" name="title">
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" [(ngModel)]="description" name="description" rows="4" cols="50"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="author" class="form-label">Author</label>
+        <select class="form-control" name="AuthorId" id="authorId" [(ngModel)]="authorId">
+            <option *ngFor="let author of authorList$|async" [value]="author.id">{{ author.firstName + " " + author.surName }}</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <mat-form-field appearance="fill">
+            <mat-label>Release Date</mat-label>
+            <input matInput [matDatepicker]="picker" placeholder="Release Date" [(ngModel)]="release_Date" name="release_Date">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+    <button (click)="addBook()" *ngIf="book.id==0" class="btn btn-primary">
+        Add
+    </button>
+    <button (click)="updateBook()" *ngIf="book.id!=0" class="btn btn-primary">
+        Update
+    </button>
+</form>

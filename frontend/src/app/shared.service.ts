@@ -36,7 +36,7 @@ readonly APIUrl_Book = 'https://localhost:7028/api/Book';
     return this.http.post(this.APIUrl_Book+'/AddBook', val);
   }
 
-  updatBook(id:number|string, val:any){
+  updateBook(id:number|string, val:any){
     return this.http.put(this.APIUrl_Book+`/UpdateBook?id=${id}`, val);
   }
 

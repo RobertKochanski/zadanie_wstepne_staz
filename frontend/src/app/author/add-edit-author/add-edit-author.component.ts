@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { SharedService } from 'src/app/shared.service';
 
 @Component({
@@ -7,6 +6,7 @@ import { SharedService } from 'src/app/shared.service';
   templateUrl: './add-edit-author.component.html',
   styleUrls: ['./add-edit-author.component.css']
 })
+
 export class AddEditAuthorComponent implements OnInit {
 
   constructor(private service:SharedService) { }
